@@ -31,7 +31,7 @@
     <!--
      | The concrete IPersonManager implementation to be used
      +-->
-      <bean id="personManager" class="org.jasig.portal.security.provider.RemoteUserPersonManager" />
+   	<bean id="personManager" class="org.jasig.portal.security.provider.SimplePersonManager" />
    	<!--
    	 | Use this bean to extend guest user properties with attributes from the request set by the requestAttributeSourceFilter
    	 +-->

@@ -97,12 +97,11 @@
         <property name="processingPosition" value="BOTH" />
         <property name="headerAttributeMapping">
             <util:map>
-               <!--<entry key="User-Agent">
+                <entry key="User-Agent">
                     <util:set>
                         <value>agentDevice</value>
                     </util:set>
-                </entry>-->
-                <entry key="eppn" value="eppn" />
+                </entry>
             </util:map>
         </property>
     </bean>
