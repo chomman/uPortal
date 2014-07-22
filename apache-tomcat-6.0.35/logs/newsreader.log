@@ -1,0 +1,98 @@
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:08:38,024 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 15:08:38,078 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 15:08:38 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:08:38,114 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:08:38,405 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:08:38,500 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:08:38,501 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:08:38,524 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4d9f8a36: defining beans [cacheManager,newsCache,propertyConfigurer,initializationServices,imageTypes,videoTypes,antisamyPolicies,romeProcessor,org.jasig.portlet.newsreader.adapter.RomeAdapter,availableAdapters,setCreationService,messageSource,org.jasig.portlet.newsreader.service.ThemeNameViewResolverImpl#0,org.springframework.web.servlet.view.XmlViewResolver#0,viewResolver,defaultExceptionHandlerTemplate,elementsProvider,pageCachingFilter,CacheExpiresFilter,newsStore,newsStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource]; root of factory hierarchy
+ INFO [main] ehcache.EhCacheManagerFactoryBean.[] 2014-07-22 15:08:38,529 - Initializing EHCache CacheManager
+ INFO [main] datasource.DriverManagerDataSource.[] 2014-07-22 15:08:38,913 - Loaded JDBC driver: org.hsqldb.jdbc.JDBCDriver
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:38,923 - Hibernate 3.2.3
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:38,926 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:38,927 - Bytecode provider name : cglib
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:38,928 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:38,957 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/NewsReaderPortlet/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:38,995 - Reading mappings from resource : hibernate-mappings/NewsSet.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,041 - Mapping class: org.jasig.portlet.newsreader.NewsSet -> NEWS_SET
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:39,053 - Reading mappings from resource : hibernate-mappings/NewsDefinition.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,075 - Mapping class: org.jasig.portlet.newsreader.NewsDefinition -> NEWS_DEFINITION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,075 - Mapping collection: org.jasig.portlet.newsreader.NewsDefinition.parameters -> NEWS_PARAMETER
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,093 - Mapping subclass: org.jasig.portlet.newsreader.UserDefinedNewsDefinition -> NEWS_DEFINITION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,095 - Mapping subclass: org.jasig.portlet.newsreader.PredefinedNewsDefinition -> NEWS_DEFINITION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,096 - Mapping collection: org.jasig.portlet.newsreader.PredefinedNewsDefinition.defaultRoles -> NEWS_ROLE
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:39,096 - Reading mappings from resource : hibernate-mappings/NewsConfiguration.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,110 - Mapping class: org.jasig.portlet.newsreader.NewsConfiguration -> NEWS_CONFIGURATION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,143 - Mapping subclass: org.jasig.portlet.newsreader.PredefinedNewsConfiguration -> NEWS_CONFIGURATION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,144 - Mapping collection: org.jasig.portlet.newsreader.PredefinedNewsConfiguration.preferences -> NEWS_PREFERENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,144 - Mapping subclass: org.jasig.portlet.newsreader.UserDefinedNewsConfiguration -> NEWS_CONFIGURATION
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:39,144 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,146 - Mapping collection: org.jasig.portlet.newsreader.NewsSet.newsConfigurations -> NEWS_CONFIGURATION
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:39,147 - Mapping collection: org.jasig.portlet.newsreader.PredefinedNewsDefinition.userConfigurations -> NEWS_CONFIGURATION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 15:08:39,147 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 15:08:39,152 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,307 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,308 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:08:39,323 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 15:08:39,332 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 15:08:39,332 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,332 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - JDBC batch size: 32
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - JDBC result set fetch size: 32
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,333 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,334 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,334 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,334 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,334 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:08:39,335 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Query cache: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Cache provider: org.hibernate.cache.NoCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,335 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,338 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,338 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,338 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:39,338 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 15:08:39,352 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 15:08:39,500 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,502 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,502 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,607 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,625 - table found: PUBLIC.PUBLIC.NEWS_CONFIGURATION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,625 - columns: [set_id, news_id, news_configuration_type, displayed, news_configuration_id, active]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,625 - foreign keys: [fk6b30f46ab3ec1261, fk6b30f46a9bf7db25]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,625 - indexes: [sys_idx_11323, sys_idx_11326, sys_idx_sys_pk_11292_11293]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,641 - table found: PUBLIC.PUBLIC.NEWS_DEFINITION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,641 - columns: [news_name, news_id, news_class, news_fname, news_listing_type]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,641 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,641 - indexes: [sys_idx_sys_pk_11296_11297]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,651 - table found: PUBLIC.PUBLIC.NEWS_PARAMETER
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,651 - columns: [news_id, news_parameter_value, news_parameter_name]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,651 - foreign keys: [fkc041151daebf5193]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,651 - indexes: [sys_idx_sys_pk_11302_11303, sys_idx_11329]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,668 - table found: PUBLIC.PUBLIC.NEWS_PREFERENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,668 - columns: [news_preference_name, news_configuration_id, news_preference_value]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,668 - foreign keys: [fkd58689c7884f6b27]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,668 - indexes: [sys_idx_sys_pk_11310_11311, sys_idx_11334]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,685 - table found: PUBLIC.PUBLIC.NEWS_ROLE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,685 - columns: [news_id, role_name]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,685 - foreign keys: [fkb9cc7a62a3a489b9]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,685 - indexes: [sys_idx_sys_pk_11317_11318, sys_idx_11339]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,703 - table found: PUBLIC.PUBLIC.NEWS_SET
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,703 - columns: [news_name, set_id, user_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,703 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:39,703 - indexes: [sys_idx_sys_pk_11321_11322]
+ERROR [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,709 - Unsuccessful: alter table NEWS_CONFIGURATION add constraint FK6B30F46AA3A489B9 foreign key (NEWS_ID) references NEWS_DEFINITION
+ERROR [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,709 - a FOREIGN KEY constraint already exists on the set of columns: FK6B30F46AA3A489B9 in statement [alter table NEWS_CONFIGURATION add constraint FK6B30F46AA3A489B9 foreign key (NEWS_ID) references NEWS_DEFINITION]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:39,709 - schema update complete
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 15:08:39,732 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4fdf5f4] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:08:39,783 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/views.xml]
+ INFO [main] support.GenericWebApplicationContext.[] 2014-07-22 15:08:39,801 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3394e61f: startup date [Tue Jul 22 15:08:39 CEST 2014]; parent: Root WebApplicationContext
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:08:39,804 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23848f0e: defining beans [json,empty]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4d9f8a36
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:08:40,087 - Root WebApplicationContext: initialization completed in 2062 ms

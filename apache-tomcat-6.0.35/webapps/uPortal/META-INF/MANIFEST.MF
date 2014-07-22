@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Jasig
+Implementation-Title: uPortal WAR
+Implementation-Version: 4.0.14
+Implementation-Vendor-Id: org.jasig.portal
+Built-By: saher
+Build-Jdk: 1.7.0_55
+Specification-Vendor: Jasig
+Specification-Title: uPortal WAR
+Created-By: Apache Maven 3.0.4
+Specification-Version: 4.0.14
+Archiver-Version: Plexus Archiver
+

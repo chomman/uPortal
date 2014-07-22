@@ -1,0 +1,825 @@
+ INFO [main] context.ContextLoader.[] 2014-07-01 17:50:38,138 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-01 17:50:38,153 - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@11e9c632: display name [Root WebApplicationContext]; startup date [Tue Jul 01 17:50:38 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-01 17:50:38,185 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-01 17:50:38,220 - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@11e9c632]: org.springframework.beans.factory.support.DefaultListableBeanFactory@cb845e9
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-01 17:50:38,259 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-01 17:50:38,273 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cb845e9: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [main] datasource.DriverManagerDataSource.[] 2014-07-01 17:50:38,317 - Loaded JDBC driver: org.hsqldb.jdbc.JDBCDriver
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:38,324 - Hibernate 3.2.3
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:38,326 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:38,327 - Bytecode provider name : cglib
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:38,328 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:38,354 - configuring from url: file:/home/saher/uportal/uPortal-4.0.14-quick-start/apache-tomcat-6.0.35/webapps/BookmarksPortlet/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:38,382 - Reading mappings from resource : hibernate-mappings/Bookmarks.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,415 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Entry -> BOOKMARK_STORE
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,439 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Folder -> BOOKMARK_STORE
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,442 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.BookmarkSet -> BOOKMARK_STORE
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,442 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.CollectionFolder -> BOOKMARK_STORE
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,442 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Bookmark -> BOOKMARK_STORE
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:38,442 - Reading mappings from resource : hibernate-mappings/Preferences.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,448 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Preferences -> BOOKMARK_PREFS
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:38,448 - Configured SessionFactory: null
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-01 17:50:38,450 - Building new Hibernate SessionFactory
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:38,450 - Mapping collection: edu.wisc.my.portlets.bookmarks.domain.Folder.children -> BOOKMARK_STORE
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-01 17:50:38,489 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,638 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,638 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-01 17:50:38,648 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-01 17:50:38,657 - Using default transaction strategy (direct JDBC transactions)
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-01 17:50:38,658 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,658 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,658 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,658 - JDBC batch size: 32
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,658 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - JDBC result set fetch size: 32
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Connection release mode: on_close
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,659 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-01 17:50:38,660 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,660 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,660 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,660 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,660 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,660 - Cache provider: org.hibernate.cache.EhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,662 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,662 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,662 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,665 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,665 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,665 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:38,665 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-01 17:50:38,679 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-01 17:50:38,777 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:38,779 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:38,779 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:38,885 - updating schema
+ INFO [main] hbm2ddl.DatabaseMetadata.[] 2014-07-01 17:50:38,889 - table not found: BOOKMARK_PREFS
+ INFO [main] hbm2ddl.DatabaseMetadata.[] 2014-07-01 17:50:38,893 - table not found: BOOKMARK_STORE
+ INFO [main] hbm2ddl.DatabaseMetadata.[] 2014-07-01 17:50:38,895 - table not found: BOOKMARK_PREFS
+ INFO [main] hbm2ddl.DatabaseMetadata.[] 2014-07-01 17:50:38,897 - table not found: BOOKMARK_STORE
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:38,904 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-01 17:50:38,910 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-01 17:50:38,911 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-01 17:50:38,926 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@fb6c459] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] export.MBeanExporter.[] 2014-07-01 17:50:39,000 - Registering beans for JMX exposure on startup
+ INFO [main] context.ContextLoader.[] 2014-07-01 17:50:39,002 - Root WebApplicationContext: initialization completed in 863 ms
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-01 17:55:22,897 - Closing org.springframework.web.context.support.XmlWebApplicationContext@11e9c632: display name [Root WebApplicationContext]; startup date [Tue Jul 01 17:50:38 CEST 2014]; root of context hierarchy
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-01 17:55:22,898 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cb845e9: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [main] export.MBeanExporter.[] 2014-07-01 17:55:22,898 - Unregistering JMX-exposed beans on shutdown
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-01 17:55:22,898 - Closing Hibernate SessionFactory
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-01 17:55:22,898 - closing
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:05:01,483 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:05:01,507 - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@483de52f: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:05:01 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:05:01,547 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:05:01,598 - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@483de52f]: org.springframework.beans.factory.support.DefaultListableBeanFactory@111f722c
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:05:01,646 - Loading properties file from class path resource [datasource.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:05:01,664 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@111f722c: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] datasource.DriverManagerDataSource.[] 2014-07-22 14:05:01,711 - Loaded JDBC driver: org.hsqldb.jdbc.JDBCDriver
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:05:01,719 - Hibernate 3.2.3
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:05:01,721 - hibernate.properties not found
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:05:01,722 - Bytecode provider name : cglib
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:05:01,723 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:05:01,751 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/BookmarksPortlet/WEB-INF/classes/hibernate.cfg.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:05:01,801 - Reading mappings from resource : hibernate-mappings/Bookmarks.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,844 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Entry -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,869 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Folder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,872 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.BookmarkSet -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,872 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.CollectionFolder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,872 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Bookmark -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:05:01,873 - Reading mappings from resource : hibernate-mappings/Preferences.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,883 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Preferences -> BOOKMARK_PREFS
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:05:01,884 - Configured SessionFactory: null
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:05:01,885 - Building new Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:05:01,886 - Mapping collection: edu.wisc.my.portlets.bookmarks.domain.Folder.children -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] connection.ConnectionProviderFactory.[] 2014-07-22 14:05:01,926 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:05:01,973 - SQL Error: -1301, SQLState: 08001
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:05:01,973 - java.net.ConnectException: Verbindungsaufbau abgelehnt
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,974 - Could not obtain connection metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1079)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1002)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:506)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 71 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 74 more
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] dialect.Dialect.[] 2014-07-22 14:05:01,987 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionFactoryFactory.[] 2014-07-22 14:05:01,997 - Using default transaction strategy (direct JDBC transactions)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:05:01,997 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Automatic flush during beforeCompletion(): disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Automatic session close at end of transaction: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Scrollable result sets: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - JDBC3 getGeneratedKeys(): disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - JDBC result set fetch size: 32
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Connection release mode: on_close
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Default batch fetch size: 1
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Generate SQL with comments: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Order SQL updates by primary key: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:01,998 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:05:02,000 - Using ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,000 - Query language substitutions: {}
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,000 - JPA-QL strict compliance: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,000 - Second-level cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,000 - Query cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,000 - Cache provider: org.hibernate.cache.EhCacheProvider
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,001 - Optimize cache for minimal puts: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,001 - Structured second-level cache entries: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,001 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,005 - Statistics: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,005 - Deleted entity synthetic identifier rollback: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,005 - Default entity-mode: pojo
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:05:02,005 - Named query checking : enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:05:02,020 - building session factory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:05:02,191 - Not binding factory to JNDI, no JNDI name configured
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:05:02,205 - Running hbm2ddl schema update
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:05:02,205 - fetching database metadata
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:05:02,205 - SQL Error: -1301, SQLState: 08001
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:05:02,205 - java.net.ConnectException: Verbindungsaufbau abgelehnt
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:05:02,205 - could not get database metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:27)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:127)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1079)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1002)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:506)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 72 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 75 more
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:05:02,206 - could not complete schema update
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:27)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:127)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1079)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1002)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:506)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 72 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 75 more
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.UpdateTimestampsCache.[] 2014-07-22 14:05:02,210 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.StandardQueryCache.[] 2014-07-22 14:05:02,211 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:05:02,224 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2974ea1b] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:05:02,297 - Registering beans for JMX exposure on startup
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:05:02,302 - Root WebApplicationContext: initialization completed in 810 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:07:24,296 - Closing org.springframework.web.context.support.XmlWebApplicationContext@483de52f: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:05:01 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:07:24,296 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@111f722c: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:07:24,296 - Unregistering JMX-exposed beans on shutdown
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:07:24,296 - Closing Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:07:24,297 - closing
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:07:24,542 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:07:24,556 - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@5e4cc024: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:07:24 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:07:24,589 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:07:24,633 - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@5e4cc024]: org.springframework.beans.factory.support.DefaultListableBeanFactory@460c5ea4
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:07:24,672 - Loading properties file from class path resource [datasource.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:07:24,687 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@460c5ea4: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] datasource.DriverManagerDataSource.[] 2014-07-22 14:07:24,734 - Loaded JDBC driver: org.hsqldb.jdbc.JDBCDriver
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:07:24,741 - Hibernate 3.2.3
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:07:24,743 - hibernate.properties not found
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:07:24,744 - Bytecode provider name : cglib
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:07:24,745 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:07:24,770 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/BookmarksPortlet/WEB-INF/classes/hibernate.cfg.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:07:24,799 - Reading mappings from resource : hibernate-mappings/Bookmarks.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,842 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Entry -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,866 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Folder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,869 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.BookmarkSet -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,869 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.CollectionFolder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,869 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Bookmark -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:07:24,869 - Reading mappings from resource : hibernate-mappings/Preferences.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,876 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Preferences -> BOOKMARK_PREFS
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:07:24,876 - Configured SessionFactory: null
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:07:24,878 - Building new Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:07:24,878 - Mapping collection: edu.wisc.my.portlets.bookmarks.domain.Folder.children -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] connection.ConnectionProviderFactory.[] 2014-07-22 14:07:24,913 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:07:24,954 - SQL Error: -1301, SQLState: 08001
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:07:24,954 - java.net.ConnectException: Verbindungsaufbau abgelehnt
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,955 - Could not obtain connection metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1284)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 66 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 69 more
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] dialect.Dialect.[] 2014-07-22 14:07:24,964 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionFactoryFactory.[] 2014-07-22 14:07:24,972 - Using default transaction strategy (direct JDBC transactions)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:07:24,972 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,972 - Automatic flush during beforeCompletion(): disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Automatic session close at end of transaction: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Scrollable result sets: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - JDBC3 getGeneratedKeys(): disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - JDBC result set fetch size: 32
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Connection release mode: on_close
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Default batch fetch size: 1
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Generate SQL with comments: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Order SQL updates by primary key: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,973 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:07:24,974 - Using ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,974 - Query language substitutions: {}
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,974 - JPA-QL strict compliance: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,974 - Second-level cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,974 - Query cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,974 - Cache provider: org.hibernate.cache.EhCacheProvider
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,975 - Optimize cache for minimal puts: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,975 - Structured second-level cache entries: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,976 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,978 - Statistics: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,979 - Deleted entity synthetic identifier rollback: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,979 - Default entity-mode: pojo
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:07:24,979 - Named query checking : enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:07:24,992 - building session factory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:07:25,087 - Not binding factory to JNDI, no JNDI name configured
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:07:25,089 - Running hbm2ddl schema update
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:07:25,089 - fetching database metadata
+ WARN [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:07:25,089 - SQL Error: -1301, SQLState: 08001
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.JDBCExceptionReporter.[] 2014-07-22 14:07:25,089 - java.net.ConnectException: Verbindungsaufbau abgelehnt
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:07:25,089 - could not get database metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:27)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:127)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1284)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 67 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 70 more
+ERROR [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:07:25,090 - could not complete schema update
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:291)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:277)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:259)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:240)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:27)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:127)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:805)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:745)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1172)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:428)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:261)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:251)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:156)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:160)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:287)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:244)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:187)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4206)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4705)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1284)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 67 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 70 more
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.UpdateTimestampsCache.[] 2014-07-22 14:07:25,093 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.StandardQueryCache.[] 2014-07-22 14:07:25,093 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:07:25,105 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2e9d5f03] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:07:25,159 - Registering beans for JMX exposure on startup
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:07:25,161 - Root WebApplicationContext: initialization completed in 618 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:16:26,177 - Closing org.springframework.web.context.support.XmlWebApplicationContext@5e4cc024: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:07:24 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:16:26,191 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@460c5ea4: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:16:26,192 - Unregistering JMX-exposed beans on shutdown
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:16:26,192 - Closing Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:16:26,192 - closing
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:16:26,463 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:16:26,477 - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@2d5e0b8a: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:16:26 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:16:26,975 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:16:27,018 - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@2d5e0b8a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@70634528
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:16:27,059 - Loading properties file from class path resource [datasource.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:16:27,074 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70634528: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] datasource.DriverManagerDataSource.[] 2014-07-22 14:16:27,123 - Loaded JDBC driver: org.hsqldb.jdbc.JDBCDriver
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:16:27,132 - Hibernate 3.2.3
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:16:27,134 - hibernate.properties not found
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:16:27,135 - Bytecode provider name : cglib
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Environment.[] 2014-07-22 14:16:27,137 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:16:27,166 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/BookmarksPortlet/WEB-INF/classes/hibernate.cfg.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:16:27,195 - Reading mappings from resource : hibernate-mappings/Bookmarks.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,230 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Entry -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,257 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Folder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,260 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.BookmarkSet -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,260 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.CollectionFolder -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,260 - Mapping subclass: edu.wisc.my.portlets.bookmarks.domain.Bookmark -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:16:27,261 - Reading mappings from resource : hibernate-mappings/Preferences.hbm.xml
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,266 - Mapping class: edu.wisc.my.portlets.bookmarks.domain.Preferences -> BOOKMARK_PREFS
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.Configuration.[] 2014-07-22 14:16:27,267 - Configured SessionFactory: null
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:16:27,268 - Building new Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.HbmBinder.[] 2014-07-22 14:16:27,269 - Mapping collection: edu.wisc.my.portlets.bookmarks.domain.Folder.children -> BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] connection.ConnectionProviderFactory.[] 2014-07-22 14:16:27,310 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,466 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,466 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] dialect.Dialect.[] 2014-07-22 14:16:27,474 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionFactoryFactory.[] 2014-07-22 14:16:27,483 - Using default transaction strategy (direct JDBC transactions)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:16:27,484 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Automatic flush during beforeCompletion(): disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Automatic session close at end of transaction: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - JDBC batch size: 32
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - JDBC batch updates for versioned data: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Scrollable result sets: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - JDBC3 getGeneratedKeys(): enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - JDBC result set fetch size: 32
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Connection release mode: on_close
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Default batch fetch size: 1
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Generate SQL with comments: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Order SQL updates by primary key: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,484 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:16:27,486 - Using ASTQueryTranslatorFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,486 - Query language substitutions: {}
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,486 - JPA-QL strict compliance: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,486 - Second-level cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,486 - Query cache: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,486 - Cache provider: org.hibernate.cache.EhCacheProvider
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,487 - Optimize cache for minimal puts: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,487 - Structured second-level cache entries: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,487 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,490 - Statistics: enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,490 - Deleted entity synthetic identifier rollback: disabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,490 - Default entity-mode: pojo
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cfg.SettingsFactory.[] 2014-07-22 14:16:27,490 - Named query checking : enabled
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:16:27,504 - building session factory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:16:27,608 - Not binding factory to JNDI, no JNDI name configured
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:16:27,610 - Running hbm2ddl schema update
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:16:27,610 - fetching database metadata
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:16:27,715 - updating schema
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.DatabaseMetadata.[] 2014-07-22 14:16:27,721 - table not found: BOOKMARK_PREFS
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.DatabaseMetadata.[] 2014-07-22 14:16:27,730 - table not found: BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.DatabaseMetadata.[] 2014-07-22 14:16:27,735 - table not found: BOOKMARK_PREFS
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.DatabaseMetadata.[] 2014-07-22 14:16:27,739 - table not found: BOOKMARK_STORE
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:16:27,743 - schema update complete
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.UpdateTimestampsCache.[] 2014-07-22 14:16:27,747 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] cache.StandardQueryCache.[] 2014-07-22 14:16:27,748 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:16:27,761 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4a36dfc4] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:16:27,816 - Registering beans for JMX exposure on startup
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2014-07-22 14:16:27,818 - Root WebApplicationContext: initialization completed in 1355 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2014-07-22 14:22:54,263 - Closing org.springframework.web.context.support.XmlWebApplicationContext@2d5e0b8a: display name [Root WebApplicationContext]; startup date [Tue Jul 22 14:16:26 CEST 2014]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.DefaultListableBeanFactory.[] 2014-07-22 14:22:54,263 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70634528: defining beans [propertyConfigurer,messageSource,bookmarkSetOwnerResolver,bookmarkSetNameResolver,bookmarkSetRequestResolver,preferencesRequestResolver,viewResolver,bookmarkStore,bookmarkStoreTarget,preferencesStore,preferencesStoreTarget,abstractStoreTransactionProxy,abstractHibernateTemplate,transactionManager,sessionFactory,dataSource,exporter,hibernateStatisticsBean]; root of factory hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] export.MBeanExporter.[] 2014-07-22 14:22:54,263 - Unregistering JMX-exposed beans on shutdown
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:22:54,263 - Closing Hibernate SessionFactory
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.SessionFactoryImpl.[] 2014-07-22 14:22:54,263 - closing

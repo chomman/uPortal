@@ -1,0 +1,347 @@
+ INFO [main] common.Version.[] 2014-07-01 17:50:21,364 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-01 17:50:21,371 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:21,373 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:21,374 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:21,501 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:21,501 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:21,548 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:21,694 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:21,695 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:21,695 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:21,695 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:21,696 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-01 17:50:21,872 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-01 17:50:21,905 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-01 17:50:21,908 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-01 17:50:22,029 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-01 17:50:22,031 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-01 17:50:22,053 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-01 17:50:22,053 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-01 17:50:22,123 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,218 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,218 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,223 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,251 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,251 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,252 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,252 - HHH000126: Indexes: [sys_idx_sys_pk_10177_10186, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,275 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,275 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,275 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,275 - HHH000126: Indexes: [sys_idx_sys_pk_11081_11082]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,275 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:22,772 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:22,772 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:22,774 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:22,779 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:22,780 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:22,780 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:22,780 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:50:22,780 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-01 17:50:22,886 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-01 17:50:22,886 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-01 17:50:22,907 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-01 17:50:22,907 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-01 17:50:22,907 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,923 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,923 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,925 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,943 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,943 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,943 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,943 - HHH000126: Indexes: [sys_idx_sys_pk_10177_10186, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,964 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,964 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,964 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:22,964 - HHH000126: Indexes: [sys_idx_sys_pk_11081_11082]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:22,964 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-01 17:50:22,984 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:55:21,267 - HHH000030: Cleaning up connection pool [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-01 17:55:21,278 - HHH000030: Cleaning up connection pool [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] common.Version.[] 2014-07-22 14:48:15,036 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-22 14:48:15,069 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:15,071 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:15,072 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:15,205 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:15,205 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:15,252 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:15,414 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:15,416 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:15,416 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:15,416 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:15,416 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:48:15,605 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:48:15,633 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:48:15,637 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:48:15,744 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:48:15,746 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:48:15,769 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:48:15,770 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:48:15,844 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:15,947 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:15,947 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:15,950 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:15,967 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:15,968 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:15,968 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:15,968 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] sql.DatabaseMetaData.[] 2014-07-22 14:48:15,970 - HHH000262: Table not found: hibernate_sequences
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:15,972 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:16,567 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:16,567 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:16,569 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:16,575 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:16,575 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:16,575 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:16,576 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:48:16,576 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:48:16,682 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:48:16,683 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:48:16,683 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:48:16,683 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:48:16,683 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:16,694 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:16,694 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:16,696 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,703 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,703 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,703 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,703 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,711 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,711 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,711 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:16,711 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:16,711 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-22 14:48:16,730 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+ INFO [main] common.Version.[] 2014-07-22 14:51:44,704 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-22 14:51:44,711 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:44,714 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:44,714 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:44,848 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:44,848 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:44,897 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:45,053 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:45,055 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:45,055 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:45,055 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:45,055 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:51:45,244 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:51:45,271 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:51:45,275 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:51:45,388 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:51:45,390 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:51:45,414 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:51:45,414 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:51:45,494 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:45,600 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:45,600 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:45,604 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,620 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,621 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,621 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,621 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,634 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,634 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,634 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:45,635 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:45,635 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:46,224 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:46,224 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:46,226 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:46,231 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:46,232 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:46,232 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:46,232 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:51:46,232 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:51:46,338 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:51:46,340 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:51:46,340 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:51:46,340 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:51:46,341 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:46,356 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:46,356 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:46,358 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,369 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,369 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,369 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,369 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,382 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,383 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,383 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:46,383 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:46,383 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-22 14:51:46,405 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+ INFO [main] common.Version.[] 2014-07-22 14:58:03,805 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-22 14:58:03,812 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:03,814 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:03,815 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:03,959 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:03,959 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:04,009 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:04,168 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:04,170 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:04,170 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:04,170 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:04,170 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:58:04,350 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:58:04,376 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:58:04,380 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:58:04,492 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:58:04,495 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:58:04,518 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:58:04,522 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 14:58:04,607 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:04,712 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:04,713 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:04,717 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,735 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,735 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,735 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,736 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,749 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,749 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,749 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:04,749 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:04,750 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:05,347 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:05,347 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:05,349 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:05,354 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:05,355 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:05,355 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:05,355 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 14:58:05,355 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:58:05,461 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 14:58:05,462 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:58:05,462 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 14:58:05,462 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 14:58:05,462 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:05,474 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:05,474 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:05,475 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,488 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,488 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,488 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,488 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,497 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,498 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,498 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:05,498 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:05,498 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-22 14:58:05,513 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+ INFO [main] common.Version.[] 2014-07-22 15:06:22,296 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-22 15:06:22,303 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:22,305 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:22,308 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:22,429 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:22,429 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:22,477 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:22,633 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:22,635 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:22,635 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:22,635 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:22,635 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:06:22,826 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 15:06:22,857 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:06:22,861 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 15:06:22,975 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:06:22,978 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 15:06:23,003 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:06:23,003 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:06:23,086 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,195 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,195 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,198 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,218 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,218 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,218 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,218 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,231 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,231 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,231 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,231 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,231 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:23,827 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:23,827 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:23,830 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:23,835 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:23,835 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:23,835 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:23,836 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:06:23,836 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:06:23,941 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 15:06:23,943 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:06:23,943 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 15:06:23,943 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 15:06:23,943 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,954 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,954 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,956 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,968 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,968 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,969 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,969 - HHH000126: Indexes: [sys_idx_sys_pk_12096_12097, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,979 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,979 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,979 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:23,979 - HHH000126: Indexes: [sys_idx_sys_pk_12236_12237]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:23,980 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-22 15:06:23,994 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+ INFO [main] common.Version.[] 2014-07-22 15:08:31,468 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+ INFO [main] hibernate.Version.[] 2014-07-22 15:08:31,475 - HHH000412: Hibernate Core {4.1.9.Final}
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:31,478 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=sa, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.HSQLDialect, hibernate.connection.url=jdbc:hsqldb:hsql://localhost:8887/uPortal, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver}
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:31,478 - HHH000021: Bytecode provider name : javassist
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:31,622 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:31,622 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:31,671 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:31,827 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:31,829 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:31,829 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:31,829 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:31,830 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:08:32,046 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 15:08:32,074 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:08:32,078 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 15:08:32,191 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:08:32,193 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 15:08:32,217 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:08:32,217 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+ WARN [main] ehcache.AbstractEhcacheRegionFactory.[] 2014-07-22 15:08:32,297 - HHH020003: Could not find a specific ehcache configuration for cache named [org.jasig.portlet.attachment.model.Attachment]; using defaults.
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:32,408 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:32,408 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:32,411 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,483 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,483 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,483 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,483 - HHH000126: Indexes: [sys_idx_sys_pk_11351_11352, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,519 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,520 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,520 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:32,520 - HHH000126: Indexes: [sys_idx_sys_pk_11362_11363]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:32,520 - HHH000232: Schema update complete
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:33,127 - HHH000043: Configuring from resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:33,128 - HHH000040: Configuration resource: /properties/db/hibernate-attachments.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:33,130 - HHH000041: Configured SessionFactory: PortalDb
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:33,136 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:33,136 - HHH000115: Hibernate connection pool size: 20
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:33,136 - HHH000006: Autocommit mode: true
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:33,136 - HHH000401: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:hsql://localhost:8887/uPortal]
+ INFO [main] internal.DriverManagerConnectionProviderImpl.[] 2014-07-22 15:08:33,136 - HHH000046: Connection properties: {user=sa, password=****, autocommit=true, release_mode=auto}
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:08:33,248 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] internal.TransactionFactoryInitiator.[] 2014-07-22 15:08:33,250 - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:08:33,250 - HHH000397: Using ASTQueryTranslatorFactory
+ INFO [main] spi.UpdateTimestampsCache.[] 2014-07-22 15:08:33,251 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+ INFO [main] internal.StandardQueryCache.[] 2014-07-22 15:08:33,251 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:33,265 - HHH000228: Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:33,265 - HHH000102: Fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:33,267 - HHH000396: Updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,300 - HHH000261: Table found: PUBLIC.PUBLIC.SCM_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,300 - HHH000037: Columns: [guid, created_by, id, source, modified_by, path, data, filename, created_at, checksum, modified_at]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,300 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,300 - HHH000126: Indexes: [sys_idx_sys_pk_11351_11352, idx_scm_attachment_guid, idx_scm_attachment_filename]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,330 - HHH000261: Table found: PUBLIC.PUBLIC.HIBERNATE_SEQUENCES
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,331 - HHH000037: Columns: [sequence_name, next_val]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,331 - HHH000108: Foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:33,331 - HHH000126: Indexes: [sys_idx_sys_pk_11362_11363]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:33,331 - HHH000232: Schema update complete
+ WARN [main] internal.EntityManagerFactoryRegistry.[] 2014-07-22 15:08:33,347 - HHH000436: Entity manager factory name (AttachmentsDb) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'

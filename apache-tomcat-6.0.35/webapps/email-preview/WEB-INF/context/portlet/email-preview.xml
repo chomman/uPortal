@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to Jasig under one or more contributor license
+    agreements. See the NOTICE file distributed with this work
+    for additional information regarding copyright ownership.
+    Jasig licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file
+    except in compliance with the License. You may obtain a
+    copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on
+    an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied. See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <context:component-scan base-package="org.jasig.portlet.emailpreview.controller"/>
+    <context:component-scan base-package="org.jasig.portlet.emailpreview.dao.javamail"/>
+    <context:component-scan base-package="org.jasig.portlet.emailpreview.dao.exchange"/>
+    <context:component-scan base-package="org.jasig.portlet.emailpreview.util"/>
+    <context:annotation-config />
+
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"/>
+
+    <bean id="inboxCache" factory-bean="cacheManager" factory-method="getCache">
+        <constructor-arg value="inboxCache" />
+    </bean>
+
+    <bean id="exchangeChangeKeyCache" factory-bean="cacheManager" factory-method="getCache">
+        <constructor-arg value="exchangeChangeKeyCache" />
+    </bean>
+
+    <bean id="exchangeFolderCache" factory-bean="cacheManager" factory-method="getCache">
+        <constructor-arg value="inboxCache" />
+    </bean>
+
+    <bean id="mailboxServernameCache" factory-bean="cacheManager" factory-method="getCache">
+        <constructor-arg value="ewsEndpointUriCache" />
+    </bean>
+
+    <!-- Ref to the mbean server -->
+    <bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean">
+        <property name="locateExistingServerIfPossible" value="true" />
+    </bean>
+
+    <!-- EhCache management and statistics -->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass" value="net.sf.ehcache.management.ManagementService" />
+        <property name="targetMethod" value="registerMBeans" />
+        <property name="arguments">
+            <list>
+                <ref bean="cacheManager" />
+                <ref bean="mbeanServer" />
+                <value>true</value>
+                <value>true</value>
+                <value>true</value>
+                <value>true</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="simpleServiceBroker" class="org.jasig.portlet.emailpreview.service.SimpleServiceBroker">
+        <property name="services">
+            <util:map>
+                <entry key="pop3" value-ref="javamailAccountService"/>
+                <entry key="pop3s" value-ref="javamailAccountService"/>
+                <entry key="imap" value-ref="javamailAccountService"/>
+                <entry key="imaps" value-ref="javamailAccountService"/>
+                <entry key="ExchangeWebServices" value-ref="exchangeAccountService"/>
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- List of the protocols that we do not display to users in the Edit Preferences page -->
+    <util:set id="nonUserProtocols">
+        <value>ExchangeWebServices</value>
+    </util:set>
+
+    <bean id="javamailAccountService"
+          class="org.jasig.portlet.emailpreview.dao.EmailAccountService"
+          p:dao-ref="javamailAccountDaoImpl">
+    </bean>
+
+    <!--
+     | EXCHANGE INTEGRATION SUPPORT
+     +-->
+    <bean id="exchangeAccountService" class="org.jasig.portlet.emailpreview.dao.EmailAccountService"
+          p:dao-ref="exchangeAccountDao">
+    </bean>
+
+    <bean id="marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+        <property name="contextPaths">
+            <list>
+                <value>com.microsoft.exchange.messages</value>
+                <value>com.microsoft.exchange.types</value>
+                <value>com.microsoft.exchange.autodiscover</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="httpClientConnectionManager" class="org.apache.http.impl.conn.PoolingClientConnectionManager"
+            p:maxTotal="200"/>
+    <bean id="httpClient" class="org.apache.http.impl.client.DefaultHttpClient"
+          c:conman-ref="httpClientConnectionManager"
+          p:credentialsProvider-ref="mailCredentialsProvider"
+          p:redirectStrategy-ref="autodiscoverRedirectStrategy">
+    </bean>
+
+    <bean id="removeHttpHeaders" class="org.jasig.portlet.emailpreview.dao.exchange.SoapHttpRequestHeaderInterceptor"/>
+    <bean id="registerHttpRequestInterceptor" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
+          p:targetObject-ref="httpClient" p:targetMethod="addRequestInterceptor">
+        <property name="arguments">
+            <array>
+                <ref bean="removeHttpHeaders"/>
+                <value>0</value>
+            </array>
+        </property>
+    </bean>
+
+    <!-- For TESTING only.  Do NOT use this client in production!! It ignores SSL cert errors. -->
+    <!--<bean id="httpClient" class="org.jasig.portlet.emailpreview.dao.exchange.TestingDontUseTrustEveryoneNtlmAuthHttpClient"-->
+                <!--c:conman="org.apache.http.impl.conn.PoolingClientConnectionManager"-->
+                <!--p:credentialsProvider="org.jasig.portlet.emailpreview.dao.exchange.ExchangeWsCredentialsProvider"-->
+                <!--p:redirectStrategy="org.jasig.portlet.emailpreview.dao.exchange.AutodiscoverRedirectStrategy">-->
+    <!--</bean>-->
+
+    <bean id="webServiceMessageSender" class="org.springframework.ws.transport.http.HttpComponentsMessageSender"
+        p:httpClient-ref="httpClient" p:connectionTimeout="60000" p:readTimeout="60000">
+    </bean>
+    <bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate"
+        p:messageSender-ref="webServiceMessageSender"
+        p:marshaller-ref="marshaller" p:unmarshaller-ref="marshaller">
+        <qualifier value="exchange" />
+    </bean>
+    <bean id="exchangeAccountDao" class="org.jasig.portlet.emailpreview.dao.exchange.ExchangeAccountDaoImpl"
+          p:webServiceOperations-ref="webServiceTemplate" p:marshaller-ref="marshaller"/>
+
+    <bean id="autodiscoverWebServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate" scope="prototype"
+          p:messageSender-ref="webServiceMessageSender"
+          p:marshaller-ref="marshaller" p:unmarshaller-ref="marshaller">
+        <qualifier value="exchangeAutodiscover" />
+    </bean>
+    <bean id="exchangeAutodiscoverDao" class="org.jasig.portlet.emailpreview.dao.exchange.ExchangeAutoDiscoverDaoImpl"
+          p:webServiceOperations-ref="autodiscoverWebServiceTemplate" p:marshaller-ref="marshaller"/>
+
+</beans>

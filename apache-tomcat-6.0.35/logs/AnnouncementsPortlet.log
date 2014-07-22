@@ -1,0 +1,631 @@
+ INFO [main] context.ContextLoader.[] 2014-07-01 17:50:11,828 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-01 17:50:11,897 - Refreshing Root WebApplicationContext: startup date [Tue Jul 01 17:50:11 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-01 17:50:11,946 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-01 17:50:13,084 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-01 17:50:13,105 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-01 17:50:13,254 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-01 17:50:13,254 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-01 17:50:13,295 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@235a75e3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:13,385 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:13,386 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:13,389 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-01 17:50:13,392 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:13,451 - configuring from url: file:/home/saher/uportal/uPortal-4.0.14-quick-start/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:13,492 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,534 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,546 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:13,588 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,603 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,603 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,603 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,603 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,604 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:13,604 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,616 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-01 17:50:13,616 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,619 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-01 17:50:13,620 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-01 17:50:13,620 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-01 17:50:13,624 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,146 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,146 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-01 17:50:14,170 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-01 17:50:14,174 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-01 17:50:14,175 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,175 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,176 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-01 17:50:14,178 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,178 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,178 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,178 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,178 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,181 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-01 17:50:14,182 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,183 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,183 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,183 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,187 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,187 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,187 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-01 17:50:14,187 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-01 17:50:14,214 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-01 17:50:14,397 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:14,402 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:14,402 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:14,408 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,497 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,497 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,497 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,497 - indexes: [sys_idx_11084]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,543 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,543 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,543 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,543 - indexes: [sys_idx_11087, sys_idx_sys_pk_10069_10071]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,578 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,578 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,578 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,578 - indexes: [sys_idx_10077]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,616 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,616 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,616 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,616 - indexes: [sys_idx_11091]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,647 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,648 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,648 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,648 - indexes: [sys_idx_11094]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,675 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,675 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,676 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,676 - indexes: [sys_idx_11097]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,702 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,702 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,702 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,702 - indexes: [sys_idx_11100, sys_idx_sys_pk_10089_10090]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,719 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,719 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,719 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-01 17:50:14,719 - indexes: [sys_idx_sys_pk_10093_10094]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-01 17:50:14,720 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-01 17:50:14,722 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-01 17:50:14,724 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-01 17:50:14,857 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ WARN [main] service.UserConfiguredTopicSubscriptionService.[] 2014-07-01 17:50:15,013 - Could not load emergencyTopic from database (OK during unit tests or after dbinit): Index: 0, Size: 0
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-01 17:50:15,082 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@46bc2c1b] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-01 17:50:15,084 - Root WebApplicationContext: initialization completed in 3255 ms
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-01 17:55:22,784 - Closing Root WebApplicationContext: startup date [Tue Jul 01 17:50:11 CEST 2014]; root of context hierarchy
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-01 17:55:22,785 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@235a75e3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] service.AnnouncementCleanupThread.[] 2014-07-01 17:55:22,785 - Stopping cleanup thread...
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-01 17:55:22,785 - Closing Hibernate SessionFactory
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-01 17:55:22,786 - closing
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:48:17,157 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 14:48:17,227 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 14:48:17 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:48:17,265 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:48:18,392 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:48:18,412 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:48:18,588 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:48:18,588 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:48:18,620 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@256dfe9d: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:18,687 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:18,688 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:18,690 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-22 14:48:18,692 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:18,741 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:18,783 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,821 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,831 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:18,868 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,881 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,882 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,882 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,882 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,882 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:18,883 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,893 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:48:18,894 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,896 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:48:18,897 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:48:18,897 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 14:48:18,901 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,392 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,392 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:48:19,411 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 14:48:19,414 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:48:19,415 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,415 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,416 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,416 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,416 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,416 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,416 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:48:19,417 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,417 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,417 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,417 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,417 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,420 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-22 14:48:19,420 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,421 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,421 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,421 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,426 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,426 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,426 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:48:19,426 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 14:48:19,453 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:48:19,620 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:19,624 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:19,624 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:19,627 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,645 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,645 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,645 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,645 - indexes: [sys_idx_11950]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,661 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,661 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,661 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,661 - indexes: [sys_idx_11953, sys_idx_sys_pk_11931_11932]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,674 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,674 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,674 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,674 - indexes: [sys_idx_11956]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,687 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,687 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,687 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,687 - indexes: [sys_idx_11959]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,701 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,701 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,701 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,701 - indexes: [sys_idx_11962]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,713 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,713 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,713 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,714 - indexes: [sys_idx_11965]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,726 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,726 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,726 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,726 - indexes: [sys_idx_11968, sys_idx_sys_pk_11946_11947]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,738 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,738 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,738 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:48:19,738 - indexes: [sys_idx_sys_pk_11948_11949]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:48:19,739 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-22 14:48:19,743 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-22 14:48:19,746 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-22 14:48:19,851 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ WARN [main] service.UserConfiguredTopicSubscriptionService.[] 2014-07-22 14:48:19,988 - Could not load emergencyTopic from database (OK during unit tests or after dbinit): Index: 0, Size: 0
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:48:20,033 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@744aca73] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:48:20,035 - Root WebApplicationContext: initialization completed in 2858 ms
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:51:46,782 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 14:51:46,834 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 14:51:46 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:51:46,874 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:51:47,989 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:51:48,009 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:51:48,156 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:51:48,157 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:51:48,189 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@92418a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:48,260 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:48,261 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:48,263 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-22 14:51:48,265 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:48,311 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:48,345 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,384 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,395 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:48,433 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,446 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,446 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,446 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,447 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,447 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:48,447 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,459 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:51:48,459 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,461 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:51:48,462 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:51:48,462 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 14:51:48,467 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,953 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,953 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:51:48,975 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 14:51:48,978 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:51:48,979 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,979 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,979 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,979 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,980 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,981 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,981 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,981 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,981 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:51:48,982 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,982 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,982 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,982 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,982 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,985 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-22 14:51:48,985 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,986 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,986 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,986 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,990 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,990 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,990 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:51:48,990 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 14:51:49,014 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:51:49,175 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:49,179 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:49,179 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:49,181 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,195 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,195 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,195 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,195 - indexes: [sys_idx_11950]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,208 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,209 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,209 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,209 - indexes: [sys_idx_11953, sys_idx_sys_pk_11931_11932]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,222 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,222 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,222 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,222 - indexes: [sys_idx_11956]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,234 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,234 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,234 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,235 - indexes: [sys_idx_11959]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,244 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,244 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,244 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,244 - indexes: [sys_idx_11962]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,257 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,257 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,257 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,257 - indexes: [sys_idx_11965]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,270 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,270 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,270 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,270 - indexes: [sys_idx_11968, sys_idx_sys_pk_11946_11947]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,284 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,284 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,284 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:51:49,284 - indexes: [sys_idx_sys_pk_11948_11949]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:51:49,285 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-22 14:51:49,289 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-22 14:51:49,291 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-22 14:51:49,402 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:51:49,578 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@a17a546] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:51:49,580 - Root WebApplicationContext: initialization completed in 2798 ms
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:58:05,893 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 14:58:05,947 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 14:58:05 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:58:05,986 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 14:58:07,117 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:58:07,137 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:58:07,288 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 14:58:07,288 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 14:58:07,322 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b101291: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:07,393 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:07,394 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:07,396 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-22 14:58:07,398 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:07,444 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:07,479 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,519 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,529 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:07,568 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,581 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,582 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,582 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,582 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,582 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:07,583 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,594 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-22 14:58:07,595 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,597 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 14:58:07,598 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 14:58:07,598 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 14:58:07,602 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,083 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,083 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 14:58:08,099 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 14:58:08,103 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 14:58:08,105 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,105 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,105 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,105 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,105 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,106 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,106 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,106 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,106 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,107 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,107 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,107 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,107 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,107 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 14:58:08,109 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,109 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,109 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,109 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,109 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,112 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-22 14:58:08,112 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,114 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,114 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,114 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,117 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,117 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,117 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 14:58:08,117 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 14:58:08,141 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 14:58:08,306 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:08,310 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:08,310 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:08,313 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,327 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,327 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,327 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,327 - indexes: [sys_idx_11950]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,342 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,342 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,342 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,342 - indexes: [sys_idx_11953, sys_idx_sys_pk_11931_11932]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,352 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,352 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,352 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,352 - indexes: [sys_idx_11956]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,359 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,359 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,359 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,359 - indexes: [sys_idx_11959]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,370 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,370 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,370 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,370 - indexes: [sys_idx_11962]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,383 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,383 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,383 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,383 - indexes: [sys_idx_11965]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,391 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,391 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,391 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,391 - indexes: [sys_idx_11968, sys_idx_sys_pk_11946_11947]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,400 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,400 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,400 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 14:58:08,400 - indexes: [sys_idx_sys_pk_11948_11949]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 14:58:08,401 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-22 14:58:08,405 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-22 14:58:08,407 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-22 14:58:08,513 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 14:58:08,696 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@39073c8a] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-22 14:58:08,698 - Root WebApplicationContext: initialization completed in 2804 ms
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:06:24,355 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 15:06:24,405 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 15:06:24 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:06:24,442 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:06:25,580 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:06:25,600 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:06:25,725 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:06:25,725 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:06:25,758 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a4b3349: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:25,823 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:25,824 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:25,826 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-22 15:06:25,829 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:25,871 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:25,905 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:25,942 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:25,952 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:25,987 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,000 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,000 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,001 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,001 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,001 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:26,001 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,012 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:06:26,013 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,015 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:06:26,016 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 15:06:26,016 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 15:06:26,020 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,506 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,506 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:06:26,520 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 15:06:26,524 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 15:06:26,526 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,526 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,526 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,526 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,526 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,527 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,527 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,527 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,527 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,528 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,528 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,528 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,528 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,528 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:06:26,530 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,530 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,530 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,530 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,530 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,533 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-22 15:06:26,533 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,534 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,534 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,534 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,537 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,537 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,537 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:06:26,537 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 15:06:26,560 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 15:06:26,715 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:26,718 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:26,719 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:26,722 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,739 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,739 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,739 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,739 - indexes: [sys_idx_11950]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,753 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,753 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,753 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,753 - indexes: [sys_idx_11953, sys_idx_sys_pk_11931_11932]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,766 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,766 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,766 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,766 - indexes: [sys_idx_11956]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,778 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,778 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,778 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,778 - indexes: [sys_idx_11959]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,791 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,791 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,791 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,791 - indexes: [sys_idx_11962]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,803 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,803 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,803 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,803 - indexes: [sys_idx_11965]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,815 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,815 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,815 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,815 - indexes: [sys_idx_11968, sys_idx_sys_pk_11946_11947]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,828 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,828 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,829 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:06:26,829 - indexes: [sys_idx_sys_pk_11948_11949]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:06:26,829 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-22 15:06:26,833 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-22 15:06:26,836 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-22 15:06:26,939 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 15:06:27,115 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@46e64a0b] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:06:27,117 - Root WebApplicationContext: initialization completed in 2761 ms
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:08:33,730 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2014-07-22 15:08:33,783 - Refreshing Root WebApplicationContext: startup date [Tue Jul 22 15:08:33 CEST 2014]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:08:33,821 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2014-07-22 15:08:34,950 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/databaseContext.xml]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:08:34,972 - Overriding bean definition for bean 'emergencyTopic': replacing [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/applicationContext.xml]] with [Generic bean: class [org.jasig.portlet.announcements.model.Topic]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/context/databaseContext.xml]]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:08:35,116 - Loading properties file from class path resource [datasource.properties]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2014-07-22 15:08:35,116 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] support.DefaultListableBeanFactory.[] 2014-07-22 15:08:35,149 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ad6d9b4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,messageSource,openSessionInViewInterceptor,viewResolver,defaultExceptionHandlerTemplate,historyExpireThreshold,cleanupThread,emergencyTopic,cacheManager,userPermissionCheckerFactory,ViewNameSelector,groupService,dataSource,sessionFactory,announcementService,topicSubscriptionService,configService,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:35,219 - Hibernate 3.3.2.GA
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:35,220 - hibernate.properties not found
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:35,222 - Bytecode provider name : javassist
+ INFO [main] cfg.Environment.[] 2014-07-22 15:08:35,225 - using JDK 1.4 java.sql.Timestamp handling
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:35,270 - configuring from url: file:/home/saher/uportal_leander/uPortal/apache-tomcat-6.0.35/webapps/Announcements/WEB-INF/classes/hibernate.cfg.xml
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:35,304 - Reading mappings from resource : hibernate-mappings/Announcement.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,345 - Mapping class: org.jasig.portlet.announcements.model.Announcement -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,355 - Mapping collection: org.jasig.portlet.announcements.model.Announcement.attachments -> ANNOUNCEMENT_ATTACHMENT
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:35,392 - Reading mappings from resource : hibernate-mappings/Topic.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,406 - Mapping class: org.jasig.portlet.announcements.model.Topic -> TOPIC
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,406 - Mapping collection: org.jasig.portlet.announcements.model.Topic.audience -> AUDIENCE
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,407 - Mapping collection: org.jasig.portlet.announcements.model.Topic.admins -> ADMINS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,407 - Mapping collection: org.jasig.portlet.announcements.model.Topic.authors -> AUTHORS
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,407 - Mapping collection: org.jasig.portlet.announcements.model.Topic.moderators -> MODERATORS
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:35,407 - Reading mappings from resource : hibernate-mappings/TopicSubscription.hbm.xml
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,419 - Mapping class: org.jasig.portlet.announcements.model.TopicSubscription -> SUBSCRIPTION
+ INFO [main] cfg.Configuration.[] 2014-07-22 15:08:35,420 - Configured SessionFactory: null
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,422 - Mapping collection: org.jasig.portlet.announcements.model.Topic.announcements -> ANNOUNCEMENT
+ INFO [main] cfg.HbmBinder.[] 2014-07-22 15:08:35,423 - Mapping collection: org.jasig.portlet.announcements.model.Topic.subscriptions -> SUBSCRIPTION
+ INFO [main] hibernate3.LocalSessionFactoryBean.[] 2014-07-22 15:08:35,423 - Building new Hibernate SessionFactory
+ INFO [main] connection.ConnectionProviderFactory.[] 2014-07-22 15:08:35,427 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,910 - RDBMS: HSQL Database Engine, version: 2.2.9
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,910 - JDBC driver: HSQL Database Engine Driver, version: 2.2.9
+ INFO [main] dialect.Dialect.[] 2014-07-22 15:08:35,929 - Using dialect: org.hibernate.dialect.HSQLDialect
+ INFO [main] transaction.TransactionFactoryFactory.[] 2014-07-22 15:08:35,932 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ INFO [main] transaction.TransactionManagerLookupFactory.[] 2014-07-22 15:08:35,933 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,933 - Automatic flush during beforeCompletion(): disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,933 - Automatic session close at end of transaction: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,933 - JDBC batch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,933 - JDBC batch updates for versioned data: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - Scrollable result sets: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - JDBC3 getGeneratedKeys(): enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - JDBC result set fetch size: 10
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - Connection release mode: auto
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - Default batch fetch size: 1
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,934 - Generate SQL with comments: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,935 - Order SQL updates by primary key: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,935 - Order SQL inserts for batching: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,935 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ INFO [main] ast.ASTQueryTranslatorFactory.[] 2014-07-22 15:08:35,936 - Using ASTQueryTranslatorFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,936 - Query language substitutions: {}
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,936 - JPA-QL strict compliance: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,936 - Second-level cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,936 - Query cache: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,939 - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ INFO [main] bridge.RegionFactoryCacheProviderBridge.[] 2014-07-22 15:08:35,939 - Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,940 - Optimize cache for minimal puts: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,940 - Structured second-level cache entries: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,940 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,944 - Statistics: enabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,944 - Deleted entity synthetic identifier rollback: disabled
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,944 - Default entity-mode: pojo
+ INFO [main] cfg.SettingsFactory.[] 2014-07-22 15:08:35,944 - Named query checking : enabled
+ INFO [main] impl.SessionFactoryImpl.[] 2014-07-22 15:08:35,967 - building session factory
+ INFO [main] impl.SessionFactoryObjectFactory.[] 2014-07-22 15:08:36,132 - Not binding factory to JNDI, no JNDI name configured
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:36,136 - Running hbm2ddl schema update
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:36,136 - fetching database metadata
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:36,139 - updating schema
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,168 - table found: PUBLIC.PUBLIC.ADMINS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,168 - columns: [admin, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,168 - foreign keys: [fk72cd5b047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,168 - indexes: [sys_idx_11205]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,191 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,191 - columns: [message, abstract, author, title, end_display, created, link, start_display, published, ann_id, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,191 - foreign keys: [fk937735477d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,191 - indexes: [sys_idx_11208, sys_idx_sys_pk_11186_11187]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,214 - table found: PUBLIC.PUBLIC.ANNOUNCEMENT_ATTACHMENT
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,214 - columns: [announcement_id, attachment_info]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,214 - foreign keys: [fk3e6a231bf93d1933]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,214 - indexes: [sys_idx_11211]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,233 - table found: PUBLIC.PUBLIC.AUDIENCE
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,233 - columns: [audience_member, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,233 - foreign keys: [fk68ccda047d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,233 - indexes: [sys_idx_11214]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,248 - table found: PUBLIC.PUBLIC.AUTHORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,249 - columns: [author, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,249 - foreign keys: [fk4429c287d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,249 - indexes: [sys_idx_11217]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,262 - table found: PUBLIC.PUBLIC.MODERATORS
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,262 - columns: [moderator, parent_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,262 - foreign keys: [fka4bbe80e7d994f46]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,262 - indexes: [sys_idx_11220]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,278 - table found: PUBLIC.PUBLIC.SUBSCRIPTION
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,278 - columns: [sub_id, owner_id, subscribed, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,278 - foreign keys: [fk9e75411dc92380a1]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,278 - indexes: [sys_idx_sys_pk_11201_11202, sys_idx_11223]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,294 - table found: PUBLIC.PUBLIC.TOPIC
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,294 - columns: [created_by, descrp, title, allow_rss, sub_method, topic_id]
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,294 - foreign keys: []
+ INFO [main] hbm2ddl.TableMetadata.[] 2014-07-22 15:08:36,294 - indexes: [sys_idx_sys_pk_11203_11204]
+ INFO [main] hbm2ddl.SchemaUpdate.[] 2014-07-22 15:08:36,294 - schema update complete
+ INFO [main] cache.UpdateTimestampsCache.[] 2014-07-22 15:08:36,297 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+ INFO [main] cache.StandardQueryCache.[] 2014-07-22 15:08:36,299 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+ INFO [main] service.PortletXMLGroupService.[] 2014-07-22 15:08:36,411 - Successfully instantiated and found roles [All_Logged_In_Users, Everyone, Faculty, Portal_Administrators, Staff, Students, ]
+ INFO [main] hibernate3.HibernateTransactionManager.[] 2014-07-22 15:08:36,605 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@f107133] of Hibernate SessionFactory for HibernateTransactionManager
+ INFO [main] context.ContextLoader.[] 2014-07-22 15:08:36,608 - Root WebApplicationContext: initialization completed in 2878 ms
